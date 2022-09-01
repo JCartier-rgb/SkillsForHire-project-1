@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Halifax Canoe and Kayak</title>
+    <meta name="author" content:"Halifax Canoe and Kayak">
+    <meta name="description" content="Welcome page for Halifax Canoe and Kayak">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="image/png" rel="icon" href="https://raw.githubusercontent.com/Zulinov/skillsProjects/main/paddle-white.png">
+    <link type="text/css" rel="stylesheet" href="halifax-canoe-styling-template.css"
+    
+    <!--[if lt IE9]>
+        <script src="https://oss.maxcdn.com/libs/html5siv/3.7.0/html5shiv.js"></script>
+    <![endif]-->
+  
+</head>
+
+<body>
+    <div class="header">
+        <header class="mainheader">
+            <button class="menu" onclick="openNav()"><img id="menu-toggle" src="https://raw.githubusercontent.com/Zulinov/skillsProjects/main/hamburger.png" alt="menu toggle" style="width: 30px; height: 30px"></button>
+            <h1>Halifax Canoe and Kayak</h1>
+            <img class="paddle-logo" src="https://raw.githubusercontent.com/Zulinov/skillsProjects/main/paddle-white.png" alt="white canoe paddles" style="width: 45px; height: 45px">
+        </header>
+    </div>
+
+    <!--Toggle navigation sidepanel-->
+    <div>
+        <nav id="leftmenu">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <ul id="menu-items">
+                <li>Home</li>
+                <li>Book Trip</li>
+                <li>Admin Login</li>
+            </ul>
+        </nav>
+    </div>
+
+    <!--Toggle JavaScript-->
+    <script>
+    function openNav() {
+        document.getElementById("leftmenu").style.width = "250px";
+    }
+
+    function closeNav() {
+        document.getElementById("leftmenu").style.width = "0"
+    }
+    </script>
+
+    <!--Welcoming image of lake-->
+    <div class="lake-header">
+        <img id="featured-image" class="featured-image" src="https://raw.githubusercontent.com/Zulinov/skillsProjects/main/canoe.jpg" alt="A calm, misty lake with a red canoe">
+        <div id="featured-text" class="featured-text">Come Experience<br>Canada</div>
+    </div>
+
+    <!--Listing of upcoming adventures-->
+    <main class="main">
+
+        <div class="info">
+            <h2 class="adventures">Upcoming Adventures</h2>  
+            <hr class="solid">      
+        </div>
+
+        <div class="info">
+            <h3 class="location" id="halifax">Halifax</h3>
+            <time>2022-September-19</time>
+            <p>Duration: Four days</p>
+            <br>
+            <p class="summary">Summary</p>
+            <p>Looks like we have a lot of fun planned for this adventure. Lots of descriptions and exciting phrases to get people interested in signing up from Halifax. Please spend your money with us so we can feed our families.</p>
+        </div>
+
+        <div class="info">
+            <h3 class="location" id="sydney">Sydney</h3>
+            <time>2022-September-25</time>
+            <p>Duration: Six days</p>
+            <br>
+            <p class="summary">Summary</p>
+            <p>Looks like we have a lot of fun planned for this adventure. Lots of descriptions and exciting phrases to get people interested in signing up from Sydney. Please spend your money with us so we can feed our families</p>
+        </div>
+
+    </main>
+
+    <!--footer-->
+    <div>
+        <footer>
+            <p>Our address is <address>Halifax Canoe and Kayak - Halifax, Nova Scotia</address>
+            </p>
+            <p>Contact us via email</p>
+            <small>&copy2020 Halifax Canoe and Kayak - All rights reserved</small>
+            <p><small>Created by JC</small></p>
+        </footer>
+    </div>
+
+
+</body>
+
+</html>

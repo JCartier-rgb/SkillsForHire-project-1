@@ -1,0 +1,200 @@
+html * {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+body {
+    margin: 0px;
+    font-family: 'Segoe UI', Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white(224, 53, 53);
+    }
+
+/* top of page header */
+.mainheader {
+    background-color: #0b2391;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
+button {
+    background-color: #0b2391;
+}
+
+.header button:hover {
+    background-color: lightblue;
+}
+
+.header h1 {
+    color: white;
+    font-size: 20px;
+    padding-bottom: 6px;;
+}
+
+/*navigation sidepanel*/
+#leftmenu {
+    height: 350px;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #0b2391;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+
+#leftmenu a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    color: white;
+    font-size: 40px;
+    display: block;
+    transition: 0.3s;
+}
+
+#leftmenu .closebtn {
+    position:absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#leftmenu .closebtn:hover {
+    color: lightblue;
+}
+
+#leftmenu ul {
+    list-style-type: none;
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    color: white;
+    font-size:25px;
+    display: block;
+    transition: 0.3s;    
+}
+
+#leftmenu li {
+    padding-bottom: 30px;
+}
+
+#leftmenu li:hover {
+    color: lightblue;
+}
+
+/*Welcome image*/
+.lake-header {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.featured-image {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    max-width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.featured-text {
+    position: absolute;
+    font-size: 40px;
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media only screen and (min-width: 1000px) {
+    .header h1 {
+        font-size: 30px;
+    }
+    .featured-image {
+        max-width: 1000px;
+    }
+    .featured-text {
+        font-size: 60px;
+    }
+  
+}
+
+/*Upcoming adventures*/
+
+.main {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.info h2 {
+    padding: 0 5px;
+}
+
+hr.solid {
+    border-top: 3px solid black;
+}
+
+@media only screen and (min-width: 700px) {
+    hr.solid {
+        display: none;
+    }
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    padding: 0 5px 20px 5px;
+}
+
+.adventures {
+    font-size: 32px;
+}
+
+.location {
+    color: green;
+    font-size: 23px;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+}
+
+.summary {
+    font-size: 20px;
+}
+
+@media only screen and (min-width: 1000px) {
+    .adventures {
+        font-size: 43px;
+    }
+    .location {
+        font-size: 33px;
+    }
+    .summary {
+        font-size: 23px;
+    }
+}
+
+footer {
+    background-color: #0b2391;
+    color: white;
+    font-size: 12px;
+    clear: both;
+    width: 100%;
+    padding-left: 6px;
+}
+
